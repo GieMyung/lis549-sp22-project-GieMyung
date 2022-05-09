@@ -1,23 +1,8 @@
-* {
-    font-family: 'Courier New', monospace;
-
-}
-
-.project image {
-    width: 100px;
-    height:100px;
-    
-
-}
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.center-image-detail {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+/*global*/
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100%;
+    background-color: #f7f5d9
 
 }
 
@@ -28,44 +13,126 @@ p {
 
 }
 
-.heading {
+/*navigation*/
+nav {
     overflow: hidden;
-    background-color: #333;
     position: fixed;
-    top: 0; 
-    width: 100%; 
+    background-color: rgb(194, 229, 211);
+    width: 100%;
+    height: 7vh;
+    top: 0;
+    left: 0;
+} 
+
+
+.nav_menu {
+  float: left;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  font-size: 17px;
 }
 
-  .heading a, .heading img{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
 
-  .heading a:hover {
-    background: #ddd;
-    color: black;
-  }
-  
-  
-  .center_image {
-    margin-top: 70px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  
-  }
+nav a {
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
+  color: white;
+}
 
-  h2 {
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 30px;
-  }
+.nav_home {
+  padding: 2px; border: 2px solid white;
+}
 
-  footer {
-    text-align: center;
+
+/* main */
+
+.main_body {
+  padding-top: 10vh;
+  width: 100%;
+  display: flex;
+  height: 400px;
+}
+
+
+.main_body_left {
+  margin: 0;
+  position: absolute;
+  right: 60%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main_body_right {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main_body_left_image {
+  width: 100%;
+  
+}
+
+/* academic */
+.academic_body {
+  text-align: center;
+  padding-top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*personal*/
+.personal_body {
+  text-align: center;
+  padding-top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+table {
+  position: relative;
+  margin: auto;
+} 
+/*footer*/
+footer {
+  overflow: hidden;
+  position: fixed;
+  background-color: rgb(194, 229, 211);
+  width: 100%;
+  bottom: 0;
+  height: 15vh;
+  left: 0;
+
+}
+
+.footer_intro, .footer_social {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer_intro_name {
+  font-family: 'Water Brush', cursive;
+  color: gray;
+}
+.footer_social_icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 0 10px 0 10px;
+}
+
+.footer_social_icon:hover {
+  opacity: 0.7;
 }
