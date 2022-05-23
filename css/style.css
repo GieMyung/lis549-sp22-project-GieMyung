@@ -104,7 +104,7 @@ nav a {
 
 .grid_container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   padding: 10px;
 }
 .grid-item {
@@ -142,7 +142,7 @@ footer {
 }
 
 .footer_intro_name {
-  font-family: 'Water Brush', cursive;
+  font-family: 'Water Brush', 'cursive';
   color: gray;
 }
 .footer_social_icon {
@@ -154,4 +154,35 @@ footer {
 
 .footer_social_icon:hover {
   opacity: 0.7;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 991px) {
+  nav {
+    background-color: black;
+  }
+
+  body{
+    background-color: white;
+  }
+  
+  .grid_container {
+    grid-template-columns: auto auto;
+  }
+
+  footer {
+    background-color: black;
+  }
+
+  .footer_intro, .footer_social {
+    color: black;
+  
+  }
+
+
 }
