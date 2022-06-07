@@ -7,7 +7,6 @@
     <meta name="description" content="description of your page">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
@@ -35,7 +34,7 @@
                         <a class="nav_home" href="project.html">Projects</a>
                     </li>
                     <li class="nav_menu_item">
-                        <a class="nav_home" href="#">Contact</a>
+                        <button class="open-button btn btn-outline-primary mt-2" onclick="openForm()">Contact</button>
                     </li>
                 </ul>
             </div>
@@ -58,7 +57,7 @@
         <div class="container">
             <div id="IA" class="grid-container-index">
                 <div class="grid-item">                        
-                    <img id="IAimg" class="grid-imgage" src="../img/information_architect.png" alt="">
+                    <img class="ia_img grid-image" src="../img/information_architect.png" alt="">
                 </div>
                 <div class="grid-item"></div>
                 <div class="grid-item">
@@ -70,7 +69,7 @@
         
             <div id="UX" class="grid-container-index">
                 <div class="grid-item">                        
-                    <img id="UXimg" class="grid-imgage" src="../img/UX_project.png" alt="">
+                    <img class="ux_img grid-image" src="../img/UX_project.png" alt="">
                 </div>
                 <div class="grid-item"></div>
                 <div class="grid-item">
@@ -83,7 +82,7 @@
         
             <div id="research" class="grid-container-index">
                 <div class="grid-item"> 
-                    <img id="researchimg" class="grid-imgage" src="../img/research.png" alt="">
+                    <img class="research_img grid-imgage" src="../img/research.png" alt="">
                 </div>
                 <div class="grid-item"></div>
                 <div class="grid-item">
@@ -95,7 +94,7 @@
             </div>
             <div id="business" class="grid-container-index">
                 <div class="grid-item">                      
-                    <img class="businessimg" src="../img/business_strategy.png" alt="">
+                    <img class="business_img grid-image" src="../img/business_strategy.png" alt="">
                 </div>
                 <div class="grid-item"></div>
                 <div class="grid-item">
@@ -122,7 +121,34 @@
                 <a href="https://github.com/GieMyung" target="_blank"><img class="footer_social_icon" src="img/github.png" alt="github url"></a>
             </div>
         </div>
-    </footer>  
+    </footer> 
+
+    <div id="myModal" class="modal" tabindex="-1">
+        <div class="modal-dialog mw-100">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+                <iframe id="modalIframe" src="https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={b841e20d-b33f-40a8-87f1-07092f0d320e}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="380" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"allowtransparency="true">
+
+                </iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="msg"><b>Message</b></label>
+          <input type="message" placeholder="Enter Message" name="msg" required>
+      
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

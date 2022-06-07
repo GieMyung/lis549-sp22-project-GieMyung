@@ -29,7 +29,7 @@
                         <a class="nav_home" href="project.html">Projects</a>
                     </li>
                     <li class="nav_menu_item">
-                        <a class="nav_home" href="#">Contact</a>
+                        <button class="open-button btn btn-outline-primary mt-2" onclick="openForm()">Contact</button>
                     </li>
                 </ul>
             </div>
@@ -123,6 +123,21 @@
             </div>
         </div>
     </footer>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="msg"><b>Message</b></label>
+          <input type="message" placeholder="Enter Message" name="msg" required>
+      
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
 
 
 

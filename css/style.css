@@ -215,6 +215,37 @@ nav {
   }
 }
 
+/*contact*/
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  border: 3px solid black;
+  z-index: 999;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  width: 30%;
+  margin-bottom:10px;
+}
+
+.form-container .cancel {
+  width: 30%;
+  background-color: red;
+}
+
 /*main contents for all pages*/
 .content-center {
   text-align: center;
@@ -238,6 +269,13 @@ nav {
   align-self: center;
 
  width: 35vw;
+}
+
+.self_intro {
+  text-align: left;
+}
+.self_intro p {
+  text-align: left;
 }
 
 #btn {
