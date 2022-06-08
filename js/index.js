@@ -24,12 +24,6 @@ function resizeFunction() {
 
 $('img').css('cursor', 'pointer');
 
-document.getElementById('ia-button').classList.add("active"); 
-document.getElementById('ux-button').classList.add("active"); 
-document.getElementById('research-button').classList.add("active"); 
-document.getElementById('business-button').classList.add("active"); 
-
-
 
 $('button').on('click', function(e) {
   if(e.target.id == 'ia-button') {
