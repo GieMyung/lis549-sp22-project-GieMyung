@@ -281,8 +281,8 @@ nav {
 
 .about_img_solo {
   align-self: center;
-
- width: 35vw;
+  width: 35vw;
+  position: sticky;
 }
 
 .self_intro {
@@ -555,6 +555,8 @@ footer {
   .bio_hide {
     display: block;
   }
+
+ 
 
   /*Global */
   .container {

@@ -56,8 +56,6 @@ $('img').attr("data-bs-toggle", "modal");
 $('img').attr("data-bs-target", "#myModal");
 
 
-
-
 document.addEventListener('click', function(e) {
   if (e.target.id == 'ia_img'){
     $('#modalIframe').remove();
