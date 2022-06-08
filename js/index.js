@@ -45,30 +45,42 @@ $('button').on('click', function(e) {
 });
 
 
+
+
+
+
+
+
 $('img').attr("data-bs-toggle", "modal");
 $('img').attr("data-bs-target", "#myModal");
 
 
-myModal.addEventListener('shown.bs.modal', function (event) {
-        const imageClicked = $(event.relatedTarget);
-          if (imageClicked.classList.contains('ia_img')==TRUE){
-            console.log("find");
-            $('#modalframe').attr("src", "https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={b841e20d-b33f-40a8-87f1-07092f0d320e}&amp;action=embedview&amp;wdAr=1.7777777777777777");
-          }
-          else if (imageClicked.classList.contains('ux_img')==TRUE) {
-            $('#modalframe').removeAttribute("src");
-            $('#modalframe').attr("src", "https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={8f597696-b0a7-4832-b471-9c01aa2f682d}&amp;action=embedview&amp;wdAr=1.7777777777777777");
-          }
-          else if (imageClicked.classList.contains('research_img')==TRUE) {
-            $('#modalframe').removeAttribute("src");
-            $('#modalframe').attr("src", "https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={80dc6dc5-aeff-4a1f-97c0-a8586050a53a}&amp;action=embedview&amp;wdAr=1.7777777777777777" );
-          }
-          else if (imageClicked.classList.contains('business_img')==TRUE) {
-            $('#modalframe').removeAttribute("src");
-            $('#modalframe').attr("src", "https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={8ec5bce9-4cc1-4bdf-9e5f-e2bffc73c1a8}&amp;action=embedview&amp;wdAr=1.7777777777777777" );
-          }     
-});
 
+
+document.addEventListener('click', function(e) {
+  if (e.target.id == 'ia_img'){
+    $('#modalIframe').remove();
+    $('.modal_main').append('<iframe id="modalIframe" src="https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={b841e20d-b33f-40a8-87f1-07092f0d320e}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="380" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"allowtransparency="true"></iframe>');
+  }
+  else if (e.target.id == 'ux_img'){
+    $('#modalIframe').remove();
+    $('.modal_main').append('<iframe id="modalIframe" src="https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={8f597696-b0a7-4832-b471-9c01aa2f682d}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="380" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"allowtransparency="true"></iframe>');
+  }
+  else if (e.target.id == 'research_img'){
+    $('#modalIframe').remove();
+    $('.modal_main').append('<iframe id="modalIframe" src="https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={80dc6dc5-aeff-4a1f-97c0-a8586050a53a}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="380" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"allowtransparency="true"></iframe>');
+  }
+  else if (e.target.id == 'business_img'){
+    $('#modalIframe').remove();
+    $('.modal_main').append('<iframe id="modalIframe" src="https://uwnetid-my.sharepoint.com/personal/gielee_uw_edu/_layouts/15/Doc.aspx?sourcedoc={8ec5bce9-4cc1-4bdf-9e5f-e2bffc73c1a8}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="380" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"allowtransparency="true"></iframe>');
+  }
+
+
+}, false);
+
+myModal.addEventListener('shown.bs.modal', function (event) {  
+    console.log('success');
+});
 
 
 function openForm() {
