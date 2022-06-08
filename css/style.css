@@ -265,7 +265,8 @@ nav {
 
 .grid-item {
   justify-content: center;
-  text-align: center;
+  text-align: left;
+  width: 80%;
 }
 
 /*index about part */
@@ -273,11 +274,12 @@ nav {
   font-size: 1.3rem;
 }
 
+
 .bio_hide {
   display: none;
 }
 
-.grid_about_img {
+.about_img_solo {
   align-self: center;
 
  width: 35vw;
@@ -405,6 +407,7 @@ footer {
     display: grid;
     grid-template-columns: 0.5fr 0fr 1fr;
     padding: 5vh 10px;
+    gap: 1.5em;
   }
   .grid-container {
     display: grid;
@@ -429,6 +432,11 @@ footer {
     position: sticky;
     top: 8rem;
     width: 20vw;
+    pointer-events: none;
+  }
+
+  .about_img {
+    pointer-events: none;
   }
 
   .bio_hide {
