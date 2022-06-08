@@ -22,7 +22,6 @@ function resizeFunction() {
 
 /* interactive for projects */
 
-$('img').css('cursor', 'pointer');
 
 
 $('button').on('click', function(e) {
@@ -47,7 +46,9 @@ $('button').on('click', function(e) {
 
 
 
+/*image modal*/
 
+$('img').css('cursor', 'pointer');
 
 
 
