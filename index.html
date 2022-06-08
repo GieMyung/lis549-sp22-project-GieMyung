@@ -43,7 +43,7 @@
                             <a class="nav_home" href="project.html">Projects</a>
                         </li>
                         <li class="nav_menu_item">
-                            <a class="nav_home" href="#">Contact</a>
+                            <button class="open-button btn btn-outline-primary mt-2" onclick="openForm()">Contact</button>
                         </li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@
 
         <main>
             <div class="container">
-                <div class="btn-group justify-content-end" role="group">
+                <div class="btn-group justify-content-end">
                     <button id="btn" type="button" class="btn btn-outline-primary">Theme change</button>
                 </div>
             </div>
@@ -221,6 +221,8 @@
                     </div>
                 </div>
             </footer>
+            
+        <!-- contact pop up--> 
 
             <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
