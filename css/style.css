@@ -232,7 +232,7 @@ nav {
 .form-popup {
   display: none;
   position: fixed;
-  top: 0;
+  top: 10px;
   right: 15px;
   border: 3px solid black;
   z-index: 999;
@@ -256,6 +256,10 @@ nav {
 .form-container .cancel {
   width: 30%;
   background-color: red;
+}
+
+.form-container h1, b {
+  color: black;
 }
 
 /*main contents for all pages*/
